@@ -1,0 +1,42 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.env
+.env
+*.sqlite3
+db.sqlite3
+
+# Django
+/static/
+media/
+*.log
+
+# Virtualenv
+venv/
+env/
+ENV/
+.virtualenv/
+
+# Poetry
+poetry.lock
+.mypy_cache/
+.dmypy.json
+.pyre/
+.tox/
+.pytest_cache/
+
+# IDEs e Editores
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Docker
+*.log
+docker-compose.override.yml
