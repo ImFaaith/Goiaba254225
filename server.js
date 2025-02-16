@@ -1,21 +1,23 @@
 const express = require("express")
 require("dotenv").config()
+const cors = require("cors")
 
 const CORRECT_PASSWORD = process.env.PASSWORD
 
 const app = express()
 const PORT = process.env.PORT
 
+app.use(cors())
 app.use(express.json())
 
-// 🏠 Rota principal (exibe uma mensagem na tela)
+// Rota principal (exibe uma mensagem na tela)
 app.get("/", (req, res) => {
     res.send(`
         <p>Hello, World!</p>
     `)
 })
 
-// 🏠 Rota da verificação de senha (exibe uma mensagem na tela)
+//  Rota da verificação de senha (exibe uma mensagem na tela)
 app.get("/verificar-senha", (req, res) => {
     res.send(`
         <p>Esperando requisição...</p>
